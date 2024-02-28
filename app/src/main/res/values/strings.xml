@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Algorithms</string>
+    <string name="home_title">What challenge\nare you looking for?</string>
+   <string name="home_app_version">v%1$s | powered by jgodinez</string>
 </resources>

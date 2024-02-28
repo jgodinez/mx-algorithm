@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- heat map colors taken from https://flatuicolors.com/palette/defo -->
+    <color name="clouds">#ecf0f1</color>
+    <color name="turquoise">#1abc9c</color>
+    <color name="alizarin">#e74c3c</color>
+    <color name="peter_river">#3498db</color>
+    <color name="sunflower">#f1c40f</color>
+    <color name="amethyst">#9b59b6</color>
+    <color name="emerald">#2ecc71</color>
+    <color name="wet_asphalt">#34495e</color>
+    <color name="carrot">#e67e22</color>
+    <color name="silver">#bdc3c7</color>
+    <color name="asbestos">#7f8c8d</color>
+
+    <!-- primary colors -->
+    <color name="rust">#D97D54</color>
+    <color name="drab">#324755</color>
+
+    <!-- secondary colors -->
+    <color name="ice">#F0F3F4</color>
+
+    <!-- typography colors -->
+    <color name="onyx">#1B1C20</color>
+    <color name="snow">#FFFFFF</color>
+
+    <!-- error colors -->
+    <color name="cinnabar">#E34234</color>
 </resources>
