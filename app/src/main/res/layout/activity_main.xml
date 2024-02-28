@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/textViewTitle"
+<androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_host_fragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/size_4"
-    android:layout_marginTop="@dimen/size_8"
-    android:layout_marginEnd="@dimen/size_4"
-    android:text="@string/home_title"
-    android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
-    android:textColor="@color/color_on_surface_emphasis_high"
-    android:textStyle="bold" />
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/nav_graph" />
