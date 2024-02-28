@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Algorithms</string>
-    <string name="home_title">What challenge\nare you looking for?</string>
-   <string name="home_app_version">v%1$s | powered by jgodinez</string>
+    <string name="home_title">Daily Algorithm Challenge</string>
+    <string name="home_app_version">v%1$s | powered by jgodinez</string>
+    <string name="alphanumeric_title">Alphanumeric String Sort</string>
+    <string name="alphanumeric_sort_input_hint">Input characters</string>
+    <string name="alphanumeric_sort_sorted_hint">Sorted characters</string>
+    <string name="alphanumeric_trim_line_breaks">Trim line breaks</string>
+    <string name="alphanumeric_sort_action">Sort</string>
 </resources>

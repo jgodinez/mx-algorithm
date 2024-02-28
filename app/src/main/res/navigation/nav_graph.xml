@@ -9,6 +9,16 @@
         android:id="@+id/homeFragment"
         android:name="com.algorithms.home.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_alphanumericSortFragment"
+            app:destination="@id/alphanumericSortFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/alphanumericSortFragment"
+        android:name="com.algorithms.challenge.AlphanumericSortFragment"
+        android:label="fragment_alphanumeric_sort"
+        tools:layout="@layout/fragment_alphanumeric_sort" />
 
 </navigation>

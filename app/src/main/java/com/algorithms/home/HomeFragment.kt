@@ -19,7 +19,11 @@ internal class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private val challengeItems: List<Challenge> by lazy {
         listOf(
-            Challenge("Alphanumeric sort", R.color.turquoise),
+            Challenge(
+                "Alphanumeric sort",
+                R.color.turquoise,
+                R.id.action_homeFragment_to_alphanumericSortFragment
+            ),
             Challenge("Next challenge", R.color.alizarin),
         )
     }
@@ -47,7 +51,6 @@ internal class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     private fun selectedChallenge(challenge: Challenge) {
-        if (challenge.launchResource != null) {
-        }
+        challenge.launchResource?.let { navigate(it) }
     }
 }

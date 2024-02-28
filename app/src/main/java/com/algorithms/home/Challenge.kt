@@ -1,9 +1,10 @@
 package com.algorithms.home
 
 import androidx.annotation.ColorRes
+import androidx.annotation.IdRes
 
 internal class Challenge(
     val content: String,
     @ColorRes val backgroundColor: Int,
-    val launchResource: Int? = null,
+    @IdRes val launchResource: Int? = null,
 )

@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Alphanumeric Sort challenge.
+- Alphanumeric sort Unit Tests.
+- Navigation extensions.
+
 ## [0.1.0] - 2024-02-27
 
 ### Added
