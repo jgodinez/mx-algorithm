@@ -7,6 +7,7 @@
 ## Challenges
 
 * [01 - Alphanumeric String Sort](assets/01/ALPHANUMERIC.md)
+* [02 - Balance parentheses](assets/02/BALANCED.md)
 
 ## Installation
 

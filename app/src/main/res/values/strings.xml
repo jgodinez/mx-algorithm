@@ -2,9 +2,13 @@
     <string name="app_name">Algorithms</string>
     <string name="home_title">Daily Algorithm Challenge</string>
     <string name="home_app_version">v%1$s | powered by jgodinez</string>
-    <string name="alphanumeric_title">Alphanumeric String Sort</string>
+    <string name="alphanumeric_title">Alphanumeric string sort</string>
     <string name="alphanumeric_sort_input_hint">Input characters</string>
     <string name="alphanumeric_sort_sorted_hint">Sorted characters</string>
     <string name="alphanumeric_trim_line_breaks">Trim line breaks</string>
     <string name="alphanumeric_sort_action">Sort</string>
+    <string name="balanced_title">Balanced parentheses</string>
+    <string name="balanced_input_hint">Input</string>
+    <string name="balanced_output_hint">Output: %1$s</string>
+    <string name="balanced_check_action">Check balanced</string>
 </resources>

@@ -19,7 +19,7 @@
             android:layout_height="?attr/actionBarSize"
             app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
             app:navigationIconTint="@color/rust"
-            app:title="@string/alphanumeric_title"
+            app:title="@string/balanced_title"
             app:titleTextColor="@color/color_on_surface_emphasis_high" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -44,49 +44,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
-                android:hint="@string/alphanumeric_sort_input_hint"
+                android:hint="@string/balanced_input_hint"
                 android:inputType="textMultiLine"
                 android:lines="6"
                 android:textColor="@color/color_on_surface_emphasis_high" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.checkbox.MaterialCheckBox
-            android:id="@+id/checkBoxTrimLineBreak"
+        <TextView
+            android:id="@+id/textViewOutput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/alphanumeric_trim_line_breaks"
-            android:textColor="@color/color_on_surface_emphasis_high" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputLayoutOutput"
-            style="@style/Algorithms.Input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/size_2"
-            android:enabled="false">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextOutput"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="top"
-                android:hint="@string/alphanumeric_sort_sorted_hint"
-                android:inputType="textMultiLine"
-                android:lines="6"
-                android:textColor="@color/color_on_surface_emphasis_high" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/color_on_surface_emphasis_high"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/balanced_output_hint" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonSort"
+            android:id="@+id/buttonCheckBalance"
             style="@style/Algorithms.Button.ContainedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/size_4"
-            android:text="@string/alphanumeric_sort_action" />
+            android:text="@string/balanced_check_action" />
 
     </LinearLayout>
 

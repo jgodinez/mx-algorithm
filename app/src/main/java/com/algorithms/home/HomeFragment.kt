@@ -20,11 +20,19 @@ internal class HomeFragment : Fragment(R.layout.fragment_home) {
     private val challengeItems: List<Challenge> by lazy {
         listOf(
             Challenge(
-                "Alphanumeric sort",
+                getString(R.string.alphanumeric_title),
                 R.color.turquoise,
                 R.id.action_homeFragment_to_alphanumericSortFragment
             ),
-            Challenge("Next challenge", R.color.alizarin),
+            Challenge(
+                getString(R.string.balanced_title),
+                R.color.alizarin,
+                R.id.action_homeFragment_to_balancedParenthesesFragment
+            ),
+            Challenge(
+                "Upcoming Challenge",
+                R.color.peter_river,
+            ),
         )
     }
 

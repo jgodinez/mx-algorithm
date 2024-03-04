@@ -29,12 +29,11 @@
         android:overScrollMode="never"
         android:paddingStart="@dimen/size_4"
         android:paddingEnd="@dimen/size_4"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/textViewVersion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:spanCount="2"
         tools:itemCount="5"
         tools:listitem="@layout/row_item_challenge" />
 

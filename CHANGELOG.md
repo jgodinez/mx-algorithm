@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Balance parentheses challenge.
+- Balance parentheses Unit Tests.
+
+### Changed
+- Sort package refactor.
+- Update home layout manager in order to fully display each menu item.
+- Balance parentheses navigation.
+
 ## [0.2.0] - 2024-02-28
 
 ### Added

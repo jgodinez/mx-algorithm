@@ -1,4 +1,4 @@
-package com.algorithms.challenge
+package com.algorithms.challenge.sort
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import org.junit.Assert.assertEquals

@@ -1,8 +1,13 @@
-package com.algorithms.challenge
+package com.algorithms.challenge.sort
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.algorithms.challenge.isEven
+import com.algorithms.challenge.isLineBreak
+import com.algorithms.challenge.isLowercaseDigit
+import com.algorithms.challenge.isNumber
+import com.algorithms.challenge.isUppercaseDigit
 
 internal class AlphanumericSortViewModel : ViewModel() {
 

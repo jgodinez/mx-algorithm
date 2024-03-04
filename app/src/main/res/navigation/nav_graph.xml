@@ -13,12 +13,20 @@
         <action
             android:id="@+id/action_homeFragment_to_alphanumericSortFragment"
             app:destination="@id/alphanumericSortFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_balancedParenthesesFragment"
+            app:destination="@id/balancedParenthesesFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/alphanumericSortFragment"
-        android:name="com.algorithms.challenge.AlphanumericSortFragment"
+        android:name="com.algorithms.challenge.sort.AlphanumericSortFragment"
         android:label="fragment_alphanumeric_sort"
         tools:layout="@layout/fragment_alphanumeric_sort" />
+    <fragment
+        android:id="@+id/balancedParenthesesFragment"
+        android:name="com.algorithms.challenge.balanced.BalancedParenthesesFragment"
+        android:label="BalancedParenthesesFragment"
+        tools:layout="@layout/fragment_balanced_parentheses" />
 
 </navigation>

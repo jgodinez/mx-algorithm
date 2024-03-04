@@ -1,4 +1,4 @@
-package com.algorithms.challenge
+package com.algorithms.challenge.balanced
 
 import android.os.Bundle
 import android.view.View
@@ -6,17 +6,17 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.algorithms.R
-import com.algorithms.databinding.FragmentAlphanumericSortBinding
+import com.algorithms.databinding.FragmentBalancedParenthesesBinding
 import com.algorithms.home.onBackPressed
 import com.algorithms.viewbinding.viewBinding
 
-internal class AlphanumericSortFragment : Fragment(R.layout.fragment_alphanumeric_sort) {
+internal class BalancedParenthesesFragment : Fragment(R.layout.fragment_balanced_parentheses) {
 
-    private val binding: FragmentAlphanumericSortBinding by viewBinding(
-        FragmentAlphanumericSortBinding::bind
+    private val binding: FragmentBalancedParenthesesBinding by viewBinding(
+        FragmentBalancedParenthesesBinding::bind
     )
 
-    private val viewModel: AlphanumericSortViewModel by viewModels()
+    private val viewModel: BalancedParenthesesViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -26,14 +26,14 @@ internal class AlphanumericSortFragment : Fragment(R.layout.fragment_alphanumeri
 
     private fun prepareUI() {
         with(binding) {
-            editTextInput.setText("P@rAnar1cu+iRImïcü4r0")
+            editTextInput.setText("(Hello (,) world (!))")
+            textViewOutput.text = getString(R.string.balanced_output_hint, "")
             topAppBar.setNavigationOnClickListener {
                 onBackPressed()
             }
-            buttonSort.setOnClickListener {
+            buttonCheckBalance.setOnClickListener {
                 val input = editTextInput.text?.toString().orEmpty()
-                val trimLineBreaks = checkBoxTrimLineBreak.isChecked
-                viewModel.sort(input, trimLineBreaks)
+                viewModel.checkBalanced(input)
             }
         }
     }
@@ -41,8 +41,8 @@ internal class AlphanumericSortFragment : Fragment(R.layout.fragment_alphanumeri
     private fun observeState() {
         viewModel.uiState.observe(viewLifecycleOwner) { state ->
             when (state) {
-                SortUiState.Loading -> loadingState(true)
-                is SortUiState.Success -> successState(state.sortedString)
+                BalancedUiState.Loading -> loadingState(true)
+                is BalancedUiState.Success -> successState(state.outputValue)
             }
         }
     }
@@ -51,9 +51,8 @@ internal class AlphanumericSortFragment : Fragment(R.layout.fragment_alphanumeri
         binding.progressIndicator.isVisible = loading
     }
 
-    private fun successState(sortedString: String) {
-        binding.editTextOutput.setText(sortedString)
+    private fun successState(outputValue: String) {
+        binding.textViewOutput.text = getString(R.string.balanced_output_hint, outputValue)
         loadingState(false)
     }
 }
-
